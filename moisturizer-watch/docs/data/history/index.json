@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-18T09:23:54.837Z",
+  "generated_at": "2026-09-18T09:27:24.735Z",
   "history": [
     {
       "date": "2026-09-18",
       "file": "history/2026-09-18",
       "summary": {
         "products_reviewed": 32,
-        "new_products": 32,
-        "updated_products": 0,
-        "duplicates_skipped": 0,
-        "verified_sources": 32
+        "new_products": 4,
+        "updated_products": 3,
+        "duplicates_skipped": 25,
+        "verified_sources": 7
       },
       "is_demo": false
     }

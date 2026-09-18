@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-18T09:23:54.837Z",
+  "generated_at": "2026-09-18T09:27:24.735Z",
   "run_date_ist": "2026-09-18",
-  "run_type": "auto",
+  "run_type": "schedule",
   "is_demo": false,
   "pipeline": "ok",
-  "last_data_update": "2026-09-18T09:23:54.837Z",
-  "last_successful_run": "2026-09-18T09:23:54.837Z",
+  "last_data_update": "2026-09-18T09:27:24.735Z",
+  "last_successful_run": "2026-09-18T09:27:24.735Z",
   "history_count": 1,
-  "verified_sources": 32,
+  "verified_sources": 7,
   "products_reviewed": 32,
-  "new_products": 32,
-  "updated_products": 0,
+  "new_products": 4,
+  "updated_products": 3,
   "history_file": "history/2026-09-18"
 }
