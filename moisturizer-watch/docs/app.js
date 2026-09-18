@@ -1,8 +1,14 @@
-/* Weekly Moisturizer Intelligence - dependency-free dashboard. */
+/* Weekly Moisturizer Intelligence - dependency-free dashboard.
+   Reads committed static JSON next to the page (docs/data/) with relative
+   paths, so it works both locally (/docs/) and on GitHub Pages (/nive/). */
 (function () {
   "use strict";
 
   var current = null; // currently rendered report object
+
+  // Data lives in docs/data/, next to this page. Relative (no leading "/")
+  // so the base path (/docs/ locally, /nive/ on GitHub Pages) is preserved.
+  var DATA = "data";
 
   function showBanner(msg, kind) {
     var el = document.getElementById("banner");
@@ -14,16 +20,9 @@
     document.getElementById("banner").className = "banner hidden";
   }
 
-  function apiBase() {
-    var qs = new URLSearchParams(window.location.search).get("worker");
-    if (qs) return qs.replace(/\/+$/, "");
-    if (window.MOISTURIZER_WORKER) return String(window.MOISTURIZER_WORKER).replace(/\/+$/, "");
-    return ""; // same-origin: Cloudflare Pages Functions serve /api/*
-  }
-
   function get(path) {
-    return fetch(apiBase() + path).then(function (r) {
-      if (!r.ok) throw new Error("HTTP " + r.status + " for " + path);
+    return fetch(DATA + "/" + path).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status + " for " + DATA + "/" + path);
       return r.json();
     });
   }
@@ -92,7 +91,7 @@
     var rows = [
       ["Last successful run", status.last_successful_run, "ok"],
       ["Last data update", status.last_data_update, "ok"],
-      ["Last email", status.last_email_status, /sent/i.test(status.last_email_status || "") ? "ok" : "bad"],
+      ["History reports", status.history_count != null ? status.history_count : "-", "ok"],
       ["Verified sources", status.verified_sources != null ? status.verified_sources : "-", "ok"],
       ["Run date (IST)", status.run_date_ist, "ok"],
       ["Run type", status.run_type, "ok"]
@@ -179,7 +178,7 @@
     sel.appendChild(latest);
     (index && index.history || []).forEach(function (h) {
       var o = document.createElement("option");
-      o.value = h.file;
+      o.value = DATA + "/" + h.file + ".json"; // e.g. data/history/2026-09-18.json
       o.textContent = h.date + (h.is_demo ? " (demo)" : " report");
       sel.appendChild(o);
     });
@@ -199,8 +198,8 @@
     });
     document.getElementById("f-report").addEventListener("change", function () {
       var v = this.value;
-      if (!v) { get("/api/latest").then(loadReport).catch(fail); return; }
-      get("/api/" + v).then(loadReport).catch(function (e) {
+      if (!v) { get("latest.json").then(loadReport).catch(fail); return; }
+      get(v).then(loadReport).catch(function (e) {
         showBanner("Could not load report " + v + " (" + e.message + ").", "error");
       });
     });
@@ -208,13 +207,14 @@
 
   function fail(e) {
     showBanner("Could not load dashboard data: " + e.message +
-      ". The dashboard reads /api/* from Pages Functions (backed by Workers KV). " +
-      "For local preview run: `npm run dev:pages` (wrangler pages dev).", "error");
+      ". The dashboard reads committed static JSON from docs/data/ with relative " +
+      "paths (no API). Regenerate locally with `npm run demo && npm run sync:pages` " +
+      "and preview at /docs/.", "error");
   }
 
-  get("/api/latest")
+  get("latest.json")
     .then(function (latest) {
-      return get("/api/history").catch(function () {
+      return get("history/index.json").catch(function () {
         return { history: [] };
       }).then(function (index) {
         return { latest: latest, index: index };
@@ -224,12 +224,7 @@
       loadReport(bundle.latest);
       loadHistorySelect(bundle.index);
       wireEvents(bundle.index);
-      if (bundle.latest && bundle.latest.is_demo) {
-        showBanner("DEMO DATA - this report contains sample products for testing, not real information.", "demo");
-      } else {
-        hideBanner();
-      }
-      return get("/api/status").catch(function () { return null; });
+      return get("status.json").catch(function () { return null; });
     })
     .then(function (status) {
       if (status) renderStatus(status);

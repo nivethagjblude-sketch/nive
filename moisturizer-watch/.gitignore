@@ -9,10 +9,11 @@ token.json
 node_modules/
 .wrangler/
 
-# Local-only pipeline output (mirrors KV) - generated, not shared
-data/
-
 # Leftovers from the old python prototype (kept out just in case)
 __pycache__/
 *.pyc
 .venv/
+
+# NOTE: data/ and docs/data/ are intentionally COMMITTED - the GitHub Pages
+# dashboard serves docs/data/ as static JSON, and the weekly workflow commits
+# regenerated data back to the repo.

@@ -63,17 +63,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>Weekly automation runs on Cloudflare Workers (Sundays 06:30 IST). Data served from Workers KV.</p>
+    <p>Automated weekly collection runs on GitHub Actions (Sundays 06:30 IST). Data committed to the repo under <code>docs/data/</code>.</p>
   </footer>
 
-  <!--
-    Optional: host the dashboard on GitHub Pages too. GitHub Pages cannot run
-    Cloudflare Pages Functions, so point the dashboard at your Cloudflare
-    Worker's API instead, e.g.:
-      window.MOISTURIZER_WORKER = "https://moisturizer-watch.<account>.workers.dev";
-    Or leave "" to use the same-origin /api/* served by Cloudflare Pages.
-  -->
-  <script>window.MOISTURIZER_WORKER = "";</script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-09-18T09:23:54.837Z",
+  "run_date_ist": "2026-09-18",
+  "run_type": "auto",
+  "is_demo": false,
+  "pipeline": "ok",
+  "last_data_update": "2026-09-18T09:23:54.837Z",
+  "last_successful_run": "2026-09-18T09:23:54.837Z",
+  "history_count": 1,
+  "verified_sources": 32,
+  "products_reviewed": 32,
+  "new_products": 32,
+  "updated_products": 0,
+  "history_file": "history/2026-09-18"
+}

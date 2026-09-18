@@ -1,31 +1,31 @@
 #!/usr/bin/env node
-/* scripts/smoke-test.mjs - offline verification of the Cloudflare pipeline.
+/* scripts/smoke-test.mjs - offline verification of the GitHub-native pipeline.
 
-No network, no Cloudflare account, no Gmail. Uses an in-memory KV mock to:
-  1. run the full demo pipeline (collect-demo -> normalize -> validate -> compare)
-  2. simulate the Worker /api/* endpoints
-  3. simulate the Pages Functions (same handlers, same mock env)
-  4. check JSON validity + key invariants
+No network, no Cloudflare, no Gmail. Uses a temporary LocalStore (real files on
+disk) to:
+  1. run the full demo pipeline twice (collect-demo -> normalize -> validate ->
+     compare -> history index -> status)
+  2. verify the exact files the GitHub Pages dashboard reads are written
+  3. check schema + data-honesty invariants
+  4. confirm the dashboard no longer calls /api/* and uses relative static paths
 
-Run: node scripts/smoke-test.mjs
+Run: npm test   (node scripts/smoke-test.mjs)
 */
 
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+import { LocalStore } from "./localStore.js";
 import { runPipeline } from "../shared/pipeline.js";
-import { buildEmail } from "../shared/email.js";
-import { buildMime } from "../shared/mime.js";
-import { KvStore } from "../shared/storage.js";
 
-class MockKV {
-  constructor() { this.m = new Map(); }
-  async get(k) { return this.m.has(k) ? this.m.get(k) : null; }
-  async put(k, v) { this.m.set(k, v); }
-}
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, "..");
+const DIR = fs.mkdtempSync(path.join(os.tmpdir(), "moisturizer-smoke-"));
+const store = new LocalStore(DIR);
 
-const kv = new MockKV();
-const env = { MOISTURIZER_KV: kv };
-const store = new KvStore(env);
 const results = [];
-
 function check(name, cond) {
   results.push({ name, pass: Boolean(cond) });
   console.log(`${cond ? "PASS" : "FAIL"} - ${name}`);
@@ -38,21 +38,34 @@ const r2 = await runPipeline({ store, demo: true, runType: "demo" });
 check("run 1 wrote 3 demo items", r1.report.summary.products_reviewed === 3);
 check("run 1 marks all as new", r1.report.summary.new_products === 3);
 check("first report flagged is_demo", r1.report.is_demo === true);
-check("second run skips all as duplicates (demo baseline reset)",
-  r2.report.summary.new_products === 3 &&
-  r2.report.summary.duplicates_skipped === 0);
+check("second run resets baseline (demo ignored) and re-reports 3 new",
+  r2.report.summary.new_products === 3);
 
-// 2) storage artifacts exist
-const latest = await store.get("latest");
-const status = await store.get("status");
-const histIndex = await store.get("history");
-const dated = await store.get(`history/${r1.date}`);
-check("latest.json present + valid", !!latest && !!latest.summary && Array.isArray(latest.items));
-check("status.json present", !!status && status.run_date_ist === r1.date);
-check("history index present", !!histIndex && histIndex.history.length >= 1);
-check("dated history present", !!dated && dated.generated_at === latest.generated_at);
+// 2) files the dashboard reads actually exist on disk
+const latestFile = path.join(DIR, "latest.json");
+const statusFile = path.join(DIR, "status.json");
+const histIndexFile = path.join(DIR, "history", "index.json");
+const historyFile = path.join(DIR, "history", `${r1.date}.json`);
+check("latest.json written", fs.existsSync(latestFile));
+check("status.json written", fs.existsSync(statusFile));
+check("history/index.json written", fs.existsSync(histIndexFile));
+check(`history/${r1.date}.json written`, fs.existsSync(historyFile));
 
-// 3) every item has schema + source
+const latest = JSON.parse(fs.readFileSync(latestFile, "utf-8"));
+const status = JSON.parse(fs.readFileSync(statusFile, "utf-8"));
+const histIndex = JSON.parse(fs.readFileSync(histIndexFile, "utf-8"));
+const dated = JSON.parse(fs.readFileSync(historyFile, "utf-8"));
+
+check("latest.json has summary + items", !!latest.summary && Array.isArray(latest.items));
+check("status.json no email fields, has history_count",
+  !("last_email_status" in status) && status.history_count >= 1 &&
+  status.run_date_ist === r1.date);
+check("history index has dated entry", histIndex.history.length === 1 &&
+  histIndex.history[0].file === `history/${r1.date}`);
+check("dated history matches latest timestamp",
+  dated.generated_at === latest.generated_at);
+
+// 3) every item has schema + real source (data-honesty)
 const schemaOk = latest.items.every((it) =>
   it.product_name && it.product_type && it.confidence &&
   Array.isArray(it.sources) && it.sources.length >= 1 &&
@@ -62,32 +75,25 @@ const schemaOk = latest.items.every((it) =>
 );
 check("all items match schema + have valid sources", schemaOk);
 
-// 4) mime builder produces a well-formed multipart email
-const mail = buildEmail(r1.report);
-const mime = buildMime({
-  from: "a@example.com", to: "b@example.com",
-  subject: mail.subject, html: mail.html, text: mail.text,
-});
-check("subject uses encoded-word for non-ASCII", /\?utf-8\?B\?/.test(mime.split("\n")[1]) || !/[^\x00-\x7F]/.test(mime.split("\n")[1]));
-check("mime has multipart boundary", /multipart\/alternative/.test(mime) && mime.includes(`--${/boundary="([^"]+)"/.exec(mime)[1]}--`));
-check("mime has base64 text part", mime.includes("Content-Transfer-Encoding: base64"));
+// 4) dashboard is GitHub-Pages ready: no /api, uses relative static data paths
+const appJsPath = path.join(ROOT, "docs", "app.js");
+const idxPath = path.join(ROOT, "docs", "index.html");
+const appJs = fs.readFileSync(appJsPath, "utf-8");
+const idxHtml = fs.readFileSync(idxPath, "utf-8");
 
-// 5) simulate Worker + Pages Function handlers with the mock env
-const { default: worker } = await import("../worker/index.js");
-const latestReq = new Request("https://test.local/api/latest");
-const resp = await worker.fetch(latestReq, env, {});
-check("worker GET /api/latest -> 200 JSON", resp.status === 200 && (await resp.json()).generated_at === latest.generated_at);
+check("docs/app.js contains no /api calls", !/['"]\/(?:api|api\/)/.test(appJs) && !appJs.includes("MOISTURIZER_WORKER"));
+check("docs/app.js reads relative data/latest.json", appJs.includes('"data"') && appJs.includes('"latest.json"') || appJs.includes("latest.json"));
+check("docs/index.html has no Cloudflare references",
+  !/Cloudflare|worker|KV/i.test(idxHtml));
 
-const statusRes = await worker.fetch(new Request("https://test.local/api/status"), env, {});
-check("worker GET /api/status -> 200", (await statusRes.json()).last_email_status === "pending");
+// 5) LocalStore maps exactly like pipeline test used above (key->file)
+const localStore = new LocalStore(DIR);
+check("LocalStore fileFor('latest') -> latest.json",
+  localStore.fileFor("latest") === "latest.json");
+check("LocalStore fileFor('history/2026-09-18') -> history/2026-09-18.json",
+  localStore.fileFor("history/2026-09-18") === "history/2026-09-18.json");
 
-const histRes = await worker.fetch(new Request("https://test.local/api/history"), env, {});
-check("worker GET /api/history -> list", (await histRes.json()).history.length >= 1);
-
-// Pages Functions use the same store adapter; test them directly
-const { onRequestGet: latestFn } = await import("../dashboard/functions/api/latest.js");
-const pages = await latestFn({ env, params: {} });
-check("Pages /api/latest handler -> 200 JSON", pages.status === 200 && (await pages.json()).summary.products_reviewed === 3);
+fs.rmSync(DIR, { recursive: true, force: true });
 
 const failures = results.filter((r) => !r.pass);
 console.log(`\n${results.length - failures.length}/${results.length} checks passed`);

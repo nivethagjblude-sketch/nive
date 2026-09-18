@@ -1,8 +1,8 @@
 /* pipeline.js - orchestrates all stages for one weekly run.
 
-Works in Node (local dev) and in the Cloudflare Worker runtime.
-`store` is any object exposing get(key) / put(key, obj) that accepts
-a Workers-KV-like interface (see shared/storage.js and scripts/localStore.js).
+Works in Node (local dev and GitHub Actions). `store` is any object exposing
+get(key) / put(key, obj) with a Workers-KV-like interface (see
+scripts/localStore.js which writes plain JSON files under ./data).
 */
 
 import { collect, collectDemo } from "./collect.js";
@@ -11,12 +11,12 @@ import { validate } from "./validate.js";
 import { buildReport } from "./compare.js";
 import { buildDigest } from "./digest.js";
 import {
-  CATEGORY, DEMO_NOTE, KV_HISTORY, KV_LATEST, KV_STATUS, MARKET, kvHistoryDate,
+  CATEGORY, DEMO_NOTE, KEY_HISTORY, KEY_LATEST, KEY_STATUS, MARKET, historyDateKey,
 } from "./config.js";
 import { isoDate, istDateString } from "./utils.js";
 
 export async function updateHistoryIndex(store, date, report, now = new Date()) {
-  const index = (await store.get(KV_HISTORY, null)) || { history: [] };
+  const index = (await store.get(KEY_HISTORY, null)) || { history: [] };
   const entries = (index.history || []).filter((e) => e.date !== date);
   entries.unshift({
     date,
@@ -28,12 +28,12 @@ export async function updateHistoryIndex(store, date, report, now = new Date()) 
     generated_at: isoDate(now),
     history: entries,
   };
-  await store.put(KV_HISTORY, idx);
+  await store.put(KEY_HISTORY, idx);
   return idx;
 }
 
 export async function buildStatus(store, report, date, opts, now = new Date()) {
-  const prev = (await store.get(KV_STATUS, null)) || {};
+  const index = (await store.get(KEY_HISTORY, null)) || { history: [] };
   const status = {
     generated_at: isoDate(now),
     run_date_ist: date,
@@ -42,15 +42,14 @@ export async function buildStatus(store, report, date, opts, now = new Date()) {
     pipeline: "ok",
     last_data_update: report.generated_at,
     last_successful_run: report.generated_at,
-    last_email_status: prev.last_email_status || "pending",
-    last_email_at: prev.last_email_at || null,
+    history_count: (index.history || []).length,
     verified_sources: report.summary.verified_sources,
     products_reviewed: report.summary.products_reviewed,
     new_products: report.summary.new_products,
     updated_products: report.summary.updated_products,
     history_file: `history/${date}`,
   };
-  await store.put(KV_STATUS, status);
+  await store.put(KEY_STATUS, status);
   return status;
 }
 
@@ -62,7 +61,7 @@ export async function runPipeline({ store, demo = false, runType = "auto", now =
   const normalized = normalize(raw);
   const valid = validate(normalized);
 
-  const prev = await store.get(KV_LATEST, null);
+  const prev = await store.get(KEY_LATEST, null);
   const prevItems =
     prev && Array.isArray(prev.items) && !prev.is_demo ? prev.items : [];
 
@@ -74,8 +73,8 @@ export async function runPipeline({ store, demo = false, runType = "auto", now =
   });
   const date = istDateString(now);
 
-  await store.put(KV_LATEST, report);
-  await store.put(kvHistoryDate(date), report);
+  await store.put(KEY_LATEST, report);
+  await store.put(historyDateKey(date), report);
   await updateHistoryIndex(store, date, report, now);
   const digest = buildDigest(report);
   const status = await buildStatus(store, report, date, { runType }, now);

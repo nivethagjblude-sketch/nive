@@ -1,6 +1,5 @@
 export const MARKET = "India";
 export const CATEGORY = "Face Moisturizer";
-export const RECIPIENT = "nivethagjblude@gmail.com";
 export const MAX_ITEMS_PER_QUERY = 6;
 
 export const SEARCH_QUERIES = [
@@ -18,11 +17,15 @@ export const SEARCH_QUERIES = [
   "sensitive skin moisturizer India",
 ];
 
-// Key names used in Workers KV (and mirrored as files locally).
-export const KV_LATEST = "latest";
-export const KV_STATUS = "status";
-export const KV_HISTORY = "history";              // history/index.json file
-export function kvHistoryDate(date) { return `history/${date}`; }
+// Store keys. The file-backed store (scripts/localStore.js) maps:
+//   latest               -> data/latest.json
+//   status               -> data/status.json
+//   history              -> data/history/index.json
+//   history/<YYYY-MM-DD> -> data/history/<YYYY-MM-DD>.json
+export const KEY_LATEST = "latest";
+export const KEY_STATUS = "status";
+export const KEY_HISTORY = "history"; // history/index.json file
+export function historyDateKey(date) { return `history/${date}`; }
 
 export const DEMO_NOTE =
   "DEMO DATA ONLY. Fabricated examples used to test the pipeline offline. Do not treat as real product information.";

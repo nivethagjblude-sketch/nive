@@ -1,0 +1,78 @@
+name: Moisturizer Weekly
+
+on:
+  schedule:
+    # Sunday 01:00 UTC = 06:30 IST
+    - cron: "0 1 * * 0"
+  workflow_dispatch:
+    inputs:
+      demo:
+        description: "Use offline demo data instead of a live collection"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "moisturizer-watch/docs/**"
+      - "moisturizer-watch/shared/**"
+      - "moisturizer-watch/package.json"
+      - ".github/workflows/**"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: moisturizer-watch
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: moisturizer-watch/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run moisturizer research pipeline
+        run: npm run ${{ github.event.inputs.demo == 'true' && 'collect:demo' || 'collect' }}
+        env:
+          RUN_TYPE: ${{ github.event.inputs.demo == 'true' && 'demo' || (github.event_name == 'workflow_dispatch' && 'manual' || 'schedule') }}
+
+      - name: Mirror data into docs/ for GitHub Pages
+        run: npm run sync:pages
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore(moisturizer): weekly report $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: moisturizer-watch/docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
