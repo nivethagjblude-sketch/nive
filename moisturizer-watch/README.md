@@ -217,6 +217,24 @@ Caution — same-contract rules as the GitHub variant:
 
 ---
 
+## GitHub Pages mirror (optional, no GitHub Actions)
+
+The live dashboard is **Cloudflare Pages** (`npm run deploy:pages`). If you also want a
+GitHub Pages copy at `https://nivethagjblude-sketch.github.io/nive/`:
+
+1. A static mirror of the dashboard lives at repo root **`docs/`** (GitHub's built-in
+   Pages source folder — no GitHub Actions needed).
+2. Repo → **Settings → Pages** → **Build and deployment** → Source **"Deploy from a
+   branch"** → branch `main`, folder `/docs` → **Save**.
+3. GitHub Pages cannot run Cloudflare Pages Functions, so the mirror must read data from
+   your Worker's `/api` (CORS is already enabled on the Worker). Either:
+   - edit `docs/index.html` and set
+     `window.MOISTURIZER_WORKER = "https://moisturizer-watch.<account>.workers.dev";`, or
+   - append `?worker=https://moisturizer-watch.<account>.workers.dev` to the URL.
+4. Re-copy `dashboard/*.{html,css,js}` into `docs/` whenever you change the dashboard.
+
+---
+
 ## Making changes (OpenCode workflow)
 
 1. Edit `shared/*` → `npm run demo:email` to see the digest locally.

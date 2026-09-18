@@ -11,6 +11,7 @@
     "demo": "node scripts/run-local.js --demo",
     "demo:email": "node scripts/run-local.js --demo --dry-email",
     "run:local": "node scripts/run-local.js --dry-email",
+    "test": "node scripts/smoke-test.mjs",
     "dev:worker": "wrangler dev",
     "dev:pages": "wrangler pages dev dashboard",
     "deploy:worker": "wrangler deploy",
