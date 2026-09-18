@@ -1,0 +1,18 @@
+# Secrets - never commit these
+.env
+.env.*
+*.pem
+credentials.json
+token.json
+
+# Node
+node_modules/
+.wrangler/
+
+# Local-only pipeline output (mirrors KV) - generated, not shared
+data/
+
+# Leftovers from the old python prototype (kept out just in case)
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,23 @@
+{
+  "name": "moisturizer-watch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Weekly moisturizer intelligence for India - Cloudflare Pages + Workers + KV + Gmail.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "demo": "node scripts/run-local.js --demo",
+    "demo:email": "node scripts/run-local.js --demo --dry-email",
+    "run:local": "node scripts/run-local.js --dry-email",
+    "dev:worker": "wrangler dev",
+    "dev:pages": "wrangler pages dev dashboard",
+    "deploy:worker": "wrangler deploy",
+    "deploy:pages": "wrangler pages deploy dashboard --project-name moisturizer-watch",
+    "deploy": "npm run deploy:worker && npm run deploy:pages"
+  },
+  "devDependencies": {
+    "wrangler": "^4.6.0"
+  }
+}
