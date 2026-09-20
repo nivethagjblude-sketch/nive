@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-18T09:27:24.735Z",
-  "run_date_ist": "2026-09-18",
+  "generated_at": "2026-09-20T01:01:24.214Z",
+  "run_date_ist": "2026-09-20",
   "run_type": "schedule",
   "is_demo": false,
   "pipeline": "ok",
-  "last_data_update": "2026-09-18T09:27:24.735Z",
-  "last_successful_run": "2026-09-18T09:27:24.735Z",
-  "history_count": 1,
-  "verified_sources": 7,
-  "products_reviewed": 32,
-  "new_products": 4,
-  "updated_products": 3,
-  "history_file": "history/2026-09-18"
+  "last_data_update": "2026-09-20T01:01:24.214Z",
+  "last_successful_run": "2026-09-20T01:01:24.214Z",
+  "history_count": 2,
+  "verified_sources": 29,
+  "products_reviewed": 33,
+  "new_products": 28,
+  "updated_products": 1,
+  "history_file": "history/2026-09-20"
 }
