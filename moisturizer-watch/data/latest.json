@@ -1,148 +1,383 @@
 {
-  "generated_at": "2026-10-04T03:57:24.188Z",
+  "generated_at": "2026-10-11T06:34:29.014Z",
   "market": "India",
   "category": "Face Moisturizer",
   "is_demo": false,
   "summary": {
-    "products_reviewed": 32,
-    "new_products": 21,
-    "updated_products": 2,
-    "duplicates_skipped": 9,
-    "verified_sources": 23
+    "products_reviewed": 34,
+    "new_products": 15,
+    "updated_products": 3,
+    "duplicates_skipped": 16,
+    "verified_sources": 18
   },
   "items": [
     {
-      "product_name": "CeraVe Launches Hydrating HA Water Gel Face Moisturizer with New Patent-Pending Ceramide Booster Technology, Exclusively on Amazon - PR Newswire",
+      "product_name": "ODEON Introduces Two Targeted Gel Moisturizers for India’s Most Persistent Skin Concerns - ThePrint",
       "brand": "unknown",
-      "product_type": "ceramide_moisturizer",
+      "product_type": "gel_moisturizer",
       "skin_type": [],
-      "key_ingredients": [
-        "ceramides"
-      ],
-      "launch_or_update_date": "2026-06-25T07:00:00.000Z",
-      "india_availability": "unknown",
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-06-13T07:00:00.000Z",
+      "india_availability": "reported",
       "price_inr": null,
       "pack_size": "",
-      "short_description": "CeraVe Launches Hydrating HA Water Gel Face Moisturizer with New Patent-Pending Ceramide Booster Technology, Exclusively on Amazon &nbsp;&nbsp; PR Newswire",
-      "notable_features": [
-        "ceramides"
-      ],
+      "short_description": "ODEON Introduces Two Targeted Gel Moisturizers for India’s Most Persistent Skin Concerns &nbsp;&nbsp; ThePrint",
+      "notable_features": [],
       "new_or_updated": "new",
       "sources": [
         {
           "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPRmcwQUxRYTRJSXZtdkpWelFpTThOSUY4YXd6RmxocUdtUllHdm5FSThxV2Z1YU9PSzRJTkN6SVhzamhkUHRMdm9UVUhmYzJJNjNLcXhOc29TcGRwN0hrTXg0dS1ESGo5cXQyNl85dllyMVNZOThERnNWQmpRcm9oWkotcmgwLUZUTHh3dkhCejdlQ0Y4WFR6QkRqTDdRU0x3UXNDVkxSOGpCUnNHbkdNa1RUa2NSME5RblZ0ZTZmSFpSOFoxU3Z5VTctZWtKNkpfS0tEbUlQS1J3aF9WZEFoVzJYbHZsV2I2UXpWM04wVTZHRTZMZFl0NzB6anlYZFVxNlpwQjlES1BNODhqeDNRZjV1cw?oc=5",
-          "published_or_checked_date": "2026-06-25T07:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVzM5ZDRydHNpeWNzNTZXRnZqeGZNS1hUT1czZk0yUXMyd0txa25IZjRmTEc2WGs3T2doUllpRVVEUzZBWEtvNnduY2ZRSWZoSDY3VE1nV2lBeXZIU3VHdi1sWXRLLVk3V0xpY3F5Z2VmazRSNHVMc0pTeExadzhtc01oYVBxTUdiM3VCQnEtNjZwajc4bHNpRjVGcG4zUkRjZzJ2OU5kbENkS2ZfdlladktrNUxCdnRmVkZRN3RWRGw1ekpIaUdGaTBHckNTUS010gHWAUFVX3lxTFAzcFNBWnlfaU1tWTdKSFJLSnhPMHBlNUJLU1A2bHhiMUgtOVlLU3FYVnktNEtvYjRVQmdDak9rODNYOHVmNGhtU2Y2NWw0cmlVSjkwYWRFLUR4azl5LXVVSGEyZjFGcmZieVB6NUJ1RGhhOVIwMV9haHJEQU5QbHdEclJZd1AwUEp4RHhBdUJCM1ptWkszeXE0ejBIdFRWVFhzY2RwVEtPSi1vdFNpMW04X2cxZWNSN3pibURKUlRXQVk1TGVWN0FmdHZTSklia21UNThGYVE?oc=5",
+          "published_or_checked_date": "2026-06-13T07:00:00.000Z",
           "source_type": "news_rss"
         }
       ],
       "confidence": "low"
     },
     {
-      "product_name": "Alkem Laboratories launches Olesoft Trucera moisturising lotion to strengthen skin barrier - Express Pharma",
+      "product_name": "ODEON Introduces Two Targeted Gel Moisturizers for India's Most Persistent Skin Concerns - ANI News",
       "brand": "unknown",
-      "product_type": "barrier_moisturizer",
+      "product_type": "gel_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-06-13T07:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "ODEON Introduces Two Targeted Gel Moisturizers for India's Most Persistent Skin Concerns &nbsp;&nbsp; ANI News",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNmhDM1J2NlJNa1lyNV9uWWJjUGpvOGNsTlBjd1BhRE1PeXFtYW9TZXAyWjdXV0RPY3NNcE9wb19wY1hPWk53UHMxM0lPV01nUm5zSTNUOGdqc1JlVzRVWHk1M1RNcExPQ0dZM3dwd0pwdUpYUXdaTVVzU3ZVZzBjUjR2MW93Nzd3bnBIRmsxeTVuT3EwcDRnYk50QU4tTjBMd3RvenlHSVBVd1lqaXVTNnZxZkVtektHWHBycGdpc1NWeXo2ZFRNZ3piS2RjdlVDZUZoUw?oc=5",
+          "published_or_checked_date": "2026-06-13T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "ELLE Exclusive: I Tried The CeraVe HA Water Gel That Might Replace Your Moisturiser - ELLE India",
+      "brand": "unknown",
+      "product_type": "gel_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-04-21T05:19:32.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "ELLE Exclusive: I Tried The CeraVe HA Water Gel That Might Replace Your Moisturiser &nbsp;&nbsp; ELLE India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMkdyTExuTFFJanBvVTNGaXR6UDViUm9LOGRNTXlOMENRVUZiZTRQUTNaVDl3RXBlQm5mRlQxQkVRSzVDRmNrU2RudHBRbHM0aGszR1UyVzVNOHhHNUJCVDdVVWxXUnhCNWdjdlFtVTJjX1hUWmZNUWJRc2JMSmJqb3FFQ00wSnc2d2I1X1FsWTYxM2s?oc=5",
+          "published_or_checked_date": "2026-04-21T05:19:32.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Water gel moisturisers for skin that feels hydrated, never sticky - Harper's Bazaar India",
+      "brand": "unknown",
+      "product_type": "gel_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-09-11T07:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Water gel moisturisers for skin that feels hydrated, never sticky &nbsp;&nbsp; Harper's Bazaar India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObTZoMVY5WEhkQklRQzZtTnFoUjlMSlItc3pfeXk0SUdMZDBQT2R3T2R4anFXSEJQZGk4VjRqN2N6aHZpR2VGZXNIQmc0NnFscHRhT25EMUY0Y1ZoM2dOUjE2VnVLX3RjdnNQb2k4X2RXZElkQ1lSa19GUkVPQnFEYng3cENqWTVDOGdxNDlOSU9PSDNXOHF5dFdkZVlmZHpZUUp3U01jU21tN3IyZnhqSGE5UndPekpibFN3LXdxcXRxakXSAcgBQVVfeXFMT3pXWTNySTVGNnVHUTR6SlBuamxrSGpRb0hUWmpqRmlVQUs5OUxIT3ZQSzRqVGNaZGEtWDNlWEN2OVlla1NXNEFOSzBFaWRrWjhSQ2xydDJNUkx0aTY1aGUzRUpjUjFfOHpzbzhRZlhPMXNMRzlzNkxLelRWUzVHWklxTVpjZkdweTNoMlBpeXZvd0VjekJ5X0pJQlhUV0NRVzcteDZReUlkbkVDelhOVERSZjdMZEJWTXJRYk9EWkpnVV9BaGxsc0s?oc=5",
+          "published_or_checked_date": "2026-09-11T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Dot and Key Launches New Vitamin C Moisturizer Campaign - Passionate In Marketing",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-08-31T07:00:00.000Z",
+      "india_availability": "unknown",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Dot and Key Launches New Vitamin C Moisturizer Campaign &nbsp;&nbsp; Passionate In Marketing",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNTzdWLTY5bDhuODJyTXp6c1YyMnkyY3JTZmsxbWxRWHhNVXkzTjZ1ZFVDck9rOUtfV3VWNFFfNWJkNmdaZFpZMG1YS0JIMUI1QW8yNk5JUHJqWEVrcmdGMnA1Uk5fSjNGUVV1UVpaTXc5M1pJdXdvNTFGaUd3TUltbnlQSVVaN3ZIeThRcnQtQ3RDODFoMURxV0pjeVp1Q2U4b2Q4OWZabnhlcmQyUkRCSEN5RHN4T0ZvcUVhNzI2aDFXdmRVaU5aaU9WNTVLQkF3YWRPSDBDa29xdS13bkNlckFpOUtoOTFwRm5N?oc=5",
+          "published_or_checked_date": "2026-08-31T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "7 made-in-India moisturisers for men worth adding to your routine - GQ India",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-05-27T07:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "7 made-in-India moisturisers for men worth adding to your routine &nbsp;&nbsp; GQ India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTkpPRXdxVWo1cVY2bmZYLVVXdW5NMGxESFFaLUZvVklvc3BqcGhzT0w1Ym96Uy1nVmJNSERPMVZfT2hBNmstYVRFb2R2RGZYbE1HRzgtT3UwWXZZbk8tZXZUWUR1RldWOGk3SzhMRmFFdWpFdF9VRkFURkEzNUpVMU5FamplSk1jN3VEOG1ucnhuT0laZnpfTzVKclJmUQ?oc=5",
+          "published_or_checked_date": "2026-05-27T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Swiss Beauty Care Launches Korean Sorbet Moisturiser - The Tribune",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-10-06T12:11:08.000Z",
+      "india_availability": "unknown",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Swiss Beauty Care Launches Korean Sorbet Moisturiser &nbsp;&nbsp; The Tribune",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNkV6c3QwNG8xV19keFp5UHJjUHJLZ3JmQllaM2xFdkkyc29LU3FrdTFFRTZFVHpNQzdjdWFzUDRkQ2lhamVFcTdYcEFDbThRbENiZjJnSDR2VTZRY0tyN3RrcmV3a0RyNDE3dmtRYjBYQXBubnhITlNCUHdiNzA5S1FSamhTQVhkcTZvWTFaeVEzSkRqa3ZYTnptRG3SAaABQVVfeXFMTzVxSDVvQWFSclItZndTNEZsckdPZ1dFX29FZ0wtYmtnVGRGN2NYNlBZSDlnU210QXhpQ29fZEVzWU4zcTZ4c19YTDFRRU1RZm9ZSmJIdUU2cVpTM1Q4VmlxMWVLYklhLUI1NHJIX2RWcHNBRE9rRll5cVFvdGFVcF9QR043ZVdtbXJxbEFkRkxDNHpKZTVPUTc2WGpzWnVoeg?oc=5",
+          "published_or_checked_date": "2026-10-06T12:11:08.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Dot & Key Expands Its Moisturiser Range With New Dragon Fruit Bounce Jelly Moisturiser - ANI News",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-09-15T07:00:00.000Z",
+      "india_availability": "unknown",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Dot & Key Expands Its Moisturiser Range With New Dragon Fruit Bounce Jelly Moisturiser &nbsp;&nbsp; ANI News",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMFZVQ2gtaC15cWw4MDdjVTFvSmZPaVIxZVRmd3l4OFhsM3Zvc084YTBCX1FJQUZLS1Q1MlpyRE5ZVlBMZGVpWDZSMHNSaC1NTEpxdjRzanZNMzI1ZGVlN0RGUDB4VFNxcGVySVNrUU1TRWdpeTFKT3JhMkNQRW9xdWdRU25mNWM1TklFZEVwdGExQk9ZcnlKOGVoaXFlVDhZWlNoaXcyWTAtNFJCYTBHOGtQaHdjZHlBS2xicEFhU25WMnV6SkhVT1lzUlNiVnAzRlp4RmF3?oc=5",
+          "published_or_checked_date": "2026-09-15T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Dot & Key Launches Dragon Fruit Jelly Moisturiser - Passionate In Marketing",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-09-07T07:00:00.000Z",
+      "india_availability": "unknown",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Dot & Key Launches Dragon Fruit Jelly Moisturiser &nbsp;&nbsp; Passionate In Marketing",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU25GYUZLek1LYjZFUU9uMWNSOERqSDhTSldka3N1eXBVMFNLTWlXbm1CLTZqU2N5YTk4NHVUdDRCam9ycGRWTllnVUJPY0NLNE9KNktnWUtLeGFwalpaeXh4WnFTVnZRRGY4bm50WjgxYUgxRjIwV2R4clN5ZmtmZ25jLWJsZW1kTGxrWjRHWUdTUXo2UDRrdEVUY1I4YkpKblFub1c5aE80S18tZlFaWlNFd3oyLVBXSzBOMldQQQ?oc=5",
+          "published_or_checked_date": "2026-09-07T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Must-Try Oil-Free Moisturisers in India for Oily Skin | Hindustan Times - Hindustan Times",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [
+        "oily"
+      ],
+      "key_ingredients": [],
+      "launch_or_update_date": "2026-05-11T07:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Must-Try Oil-Free Moisturisers in India for Oily Skin | Hindustan Times &nbsp;&nbsp; Hindustan Times",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb0o1NnA1TnZmazhCZ19vckFtajlnQngwdDhhUXg3QnN3S0F2M1NSVEo1TkZybnR3NVZJdTJxellfVS1yVjFmU09FMUNCX2lUQzJtWXl2UV9VOTVFVVd1Qm01b1BBV3pwVWstSzdRZzN6WTRhcUpwMFV3VkJDcFEwQm1lN19RY05uZ1EyeXp5N3phVHRwaEpSenR1RmJ3YTYwRmY5dlNEaHY5TVFjOEhSb2VR0gG3AUFVX3lxTE96QnR5Ync0NkFkWjlEQWZ6OE11eVYzanRNQ0JfUkRCbDBKNUtudUZlc0J3bXlXRlB4TWw5NklmY1ZLQ2MzVUFWdDFWQkNGX2Jud2VQd21CZklVQ2dJbFdiN3R6VHBLZjllRVAtM3FoT05DWUwyYXdnQzVkQXBCd1RkS245dU9CM2VQdF9PdHdOVWhfMG5lN1d0N1ZaYWcxVWNPVUM0NjRqSVA3bWVMRTZoS3lFLU1SYw?oc=5",
+          "published_or_checked_date": "2026-05-11T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Kickstart Your Skincare: The Best Moisturisers for Men Starting Out - Man's World India",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2025-06-13T07:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Kickstart Your Skincare: The Best Moisturisers for Men Starting Out &nbsp;&nbsp; Man's World India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQa3VCWWUxcy1OdXRxaFBGNmYwbUFPUUhoX0QybmtPYjh3cnN1TnR2dy05UVkzY09WQlVsNVhvTmNKT3RFRDJnRUtReGttcm5jRkd6ZVJaUm5vNjllTTh0Z1J2VldKQnRmNGcxQXNoV1JtSE9aR0FzaU5WZmZsOS1lVnJZVmR1dWdHVW1xUjNNM0x3YXBu?oc=5",
+          "published_or_checked_date": "2025-06-13T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Your moisturiser is lying to you: Experts reveal real reason behind dry skin, despite hydration - The Times of India",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [
+        "dry"
+      ],
+      "key_ingredients": [],
+      "launch_or_update_date": "2025-12-08T08:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Your moisturiser is lying to you: Experts reveal real reason behind dry skin, despite hydration &nbsp;&nbsp; The Times of India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNR2ZoNTBSVkhVb01hVXVrLWROcDFPVGp3MFJWc3IyNFFlOGNRc3ZQbU0zUXJrWVNIcnFELUstWXI1LTNwM2Q1ekk3MnlieWZIa256RE5EdnIzMWpNb1Fjc1IzeTY2RzJ1V05Bb0JHVE1tSkUwMkhkRWJUY1pvckh0eW9qYjVub2VSZ2pvRENsNllYQTNYb0JERjM2MTdOYUZzOEJHcnZlM1RSNnpxQWI0OVl6SE56OTdUSno0RG5NZF95UVM4MGpBXzhsbGZ5OHlPeVRTRzk3TnFCYkEwdEhTMDdZV2xqeUlId0NpVWo1dVFBN0E4RmxSZGFCN003Q0dkbEJz0gGIAkFVX3lxTFBSZXlEbmdjMjNUdTR3Q3BRdElhUFpWN0NRcERHdWE3SEtfLVQ2SG9mT09GOVFXaXVRUWJ1cUJjVlZhQkJ3TGFtTTJnMVBXRE1PQkg2S1F1ZkJ1QjlkdUtrbkx6UmNqVk9KdjR5U1JJbFhvcVRUQ3J5ZUN3YzhjakhvSDVNejhIalNuU1kzbVc5RVNCSzdFMEF1ZS1wTW5MS1hyRXdseGViLVlSa0ZIbTUxNlZ2ellnNTV0N09vSjVxU2xqUmk2UTNnVHh2X0cwSUVSUHBiYldPck9wVU9WVkZCYlNveVBWV1llb0NHeGdDUVV2Z0wzZlZVVkVoM3duM0kxNXZiUFpJbQ?oc=5",
+          "published_or_checked_date": "2025-12-08T08:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "14 best moisturisers according to your skin type, perfect for winter - Vogue India",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [],
+      "key_ingredients": [],
+      "launch_or_update_date": "2017-12-11T08:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "14 best moisturisers according to your skin type, perfect for winter &nbsp;&nbsp; Vogue India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYllidV9mTnUwT2E5MnpfaTJLUFVfTTlNR05waHJHVUhhQXlGY3ZmaEFGd2paNjVZXzY4QjJpUHN4aG5NMzdVTXl6eVk1aHQ3NVlaWDNtNzR5TGZ0eE9zOXRBT1NLekc5RVZocHp0UlhXZHpZVnBxTXplb3lTckJiTHVKcEpWOE4zZmZ5NmhVdE5IVUdQaFkxQmJoOHVWeU51Tkx6UQ?oc=5",
+          "published_or_checked_date": "2017-12-11T08:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Aveeno Baby Expands its Sensitive Skin Care portfolio, Launches New Daily Moisture Hydrating Facial Gel Cream especially designed for baby’s face - Passionate In Marketing",
+      "brand": "unknown",
+      "product_type": "sensitive_skin_moisturizer",
+      "skin_type": [
+        "sensitive",
+        "all"
+      ],
+      "key_ingredients": [],
+      "launch_or_update_date": "2025-02-27T08:00:00.000Z",
+      "india_availability": "unknown",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "Aveeno Baby Expands its Sensitive Skin Care portfolio, Launches New Daily Moisture Hydrating Facial Gel Cream especially designed for baby’s face &nbsp;&nbsp; Passionate In Marketing",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaG5PWnVXNHY0bDJVWHg1TGpIc0xScGxRdWxaUGxoa1BQbmdVaEQ0VndSdk5nVjI5TE9fUGR2Z0J3ZmFGbHpublMwb05IVjhIU2dIMWh0N1VsSFFqTDZkT0xFekJUbFd3djN6U0Jua19oalJIVUF0ODVfWWtXY2pXLVQzN25GN19OOW5RSFFOMTBYUUNWUjNRcVc3UHFyVTI4NG1tWG9XcE5GNkVIa3NSem5GWmNveThvaGZaUzdhcmNxbEVnTDN4NDMyX0c3clk2SHN4b08xOW1LeG1LTDJzSC10dnlwU1g0ZHJWRE5obGZxZnJ4SUhwZGI3Tzd1YUFXenVVbkgtMGdpLW9NOE9j?oc=5",
+          "published_or_checked_date": "2025-02-27T08:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "The Best Non-Comedogenic Moisturisers For Oily Skin | Grazia India - Grazia India",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
+      "skin_type": [
+        "oily"
+      ],
+      "key_ingredients": [],
+      "launch_or_update_date": "2023-09-01T07:00:00.000Z",
+      "india_availability": "reported",
+      "price_inr": null,
+      "pack_size": "",
+      "short_description": "The Best Non-Comedogenic Moisturisers For Oily Skin | Grazia India &nbsp;&nbsp; Grazia India",
+      "notable_features": [],
+      "new_or_updated": "new",
+      "sources": [
+        {
+          "name": "Unknown source",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZnhXRTBOcUczUy1uVjZpMmh3eVJmYXROY21qQVNYTlp6M0ZudHVDS1JtaW5qdy1Hd0xrN2VqRjRzVE8zZWQzM2g4S3Y3MlNadHJyRkY4M2Q2Q2lDNHdpcDltSGZzWjkzMnRyaXRVYjFmZ19KaHZUMTh3LTU0c2xISkNXTGJuNFZERVVYb3MzM1VoTTJBYWJ5YzdHSjhodVNlbjRVTjJOS07SAacBQVVfeXFMUG14My1HRGNRcmF0cXNsanVua0xqWFlpQU5GaTYwYTlJRENGcThmT3VfZjRROXVhMnlWVG1jZkNEY3lxWWJnbjNDa0hZM2lrY1BQWGtmTndfUnQxXzQyZzZBVGxXNlBEYnJmakpfX2Z6MUdDQ2NqajBNWkhhV256SkFrRWJjTlpsU1IzWDR4TnVUMG9WNFdfejZlbjVDNmNfbmNyZ0EtQVU?oc=5",
+          "published_or_checked_date": "2023-09-01T07:00:00.000Z",
+          "source_type": "news_rss"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_name": "Alkem launches moisturizing lotion under Olesoft brand - ETPharma.com",
+      "brand": "unknown",
+      "product_type": "face_moisturizer",
       "skin_type": [],
       "key_ingredients": [],
       "launch_or_update_date": "2025-08-19T07:00:00.000Z",
       "india_availability": "unknown",
       "price_inr": null,
       "pack_size": "",
-      "short_description": "Alkem Laboratories launches Olesoft Trucera moisturising lotion to strengthen skin barrier &nbsp;&nbsp; Express Pharma",
+      "short_description": "Alkem launches moisturizing lotion under Olesoft brand &nbsp;&nbsp; ETPharma.com",
       "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYV8zVGpSc0pJdGQ5RGdORGJBZTVKWTFrWkJ0SEZLcFc3aUxxWHNlUWtSS0JxWUxvRE0tcnJRLUcyMUNHYl9SUEwxTUZyT3pvZ0ZUOWgyY0hoMHJSVWZTc3RuQWVBTUwyM2xHVWhSRzNrSzRuUkhXbnQxb2Z5WVVlZzE4bGV0UU1NVHZjcUhBcTU4V0I0YjhVQnhMZWtqTzNGSHdhYmxjckpXNk1wWWJOWS02TXVCOUhtSUNreA?oc=5",
-          "published_or_checked_date": "2025-08-19T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Vaseline India launches new campaign for Cloud Soft Moisturiser - afaqs!",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-08-14T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Vaseline India launches new campaign for Cloud Soft Moisturiser &nbsp;&nbsp; afaqs!",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTjFuUzRUc3ZMV2tVN3ZDVUNVQ2hjemxPSk1Sb3F0SVBQUlk5UTNoMnRfR18xUjEwbTlTZ0hWR0otOHR0ZkpVVjVPeDNlUXZxY3BEM0ZlX3RKQ0lOdXZsbWIwNng3N1d3SGl1T2NQaVVxQ1ZVWkV1MjdmZ3diZEJuaWlvUTVGSkc5ZXQ3eTJWa21XdE5IR3NlVkpVT2tBaHpNYmlXSEZkNFV6TF82Y0RZ?oc=5",
-          "published_or_checked_date": "2025-08-14T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Vaseline India launches ‘Cloud Soft’ moisturiser with high-altitude Dubai event - IMPACT Magazine",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-08-14T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Vaseline India launches ‘Cloud Soft’ moisturiser with high-altitude Dubai event &nbsp;&nbsp; IMPACT Magazine",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMTl1TXNXTkFVTDVqRGhEQWwwT2Zyb0o5M09DUTNxb2NZbnA3ZGdFRHZrRThVTXhfX2xrX0czMnRaYXFacklYT21CMzV3c1VobWFxd3ZwcEtrclhocm9vamh5NEFkNUhBR3FrY0tZVlAyNFRiZXhEYXdJM2xoRURrTXBFaUxzeTRDdmg3eXNCSjZTNVFScFlfdEhURU1GSzZUemkzNjF6Q1luYmY4S0owUHJhZ21nYXZwWnlwYUFNLVZfek9ZdFp0MWJ4MEwwQQ?oc=5",
-          "published_or_checked_date": "2025-08-14T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Baby Forest launches ‘Softness, Sealed with Ayurveda’ campaign for Khilta Mukhra Baby Face Cream - IFAB MEDIA",
-      "brand": "unknown",
-      "product_type": "cream_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2026-07-03T06:50:40.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Baby Forest launches ‘Softness, Sealed with Ayurveda’ campaign for Khilta Mukhra Baby Face Cream &nbsp;&nbsp; IFAB MEDIA",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE00SFp4bmF6SDFwdmhCa3NxTUFkWFBxRVJ2TnlNQlEzQnpSSmNfeWlOZndiOXVCQmJ0V1BlaVEwMExLVmx0T3NZVG0yZVFtWjdVWDJsWHZ0TkFQY3FqbEJ5aktaYW4xZw?oc=5",
-          "published_or_checked_date": "2026-07-03T06:50:40.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Alkem launches moisturizing lotion under Olesoft brand - pharma.economictimes.indiatimes.com",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-08-19T07:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Alkem launches moisturizing lotion under Olesoft brand &nbsp;&nbsp; pharma.economictimes.indiatimes.com",
-      "notable_features": [],
-      "new_or_updated": "new",
+      "new_or_updated": "updated",
       "sources": [
         {
           "name": "Unknown source",
@@ -154,105 +389,7 @@
       "confidence": "low"
     },
     {
-      "product_name": "e’clat Superior Announces the Launch of Clinically Proven Glutathione Face Cream: The Ultimate Brightening Complex - ThePrint",
-      "brand": "unknown",
-      "product_type": "cream_moisturizer",
-      "skin_type": [
-        "all"
-      ],
-      "key_ingredients": [],
-      "launch_or_update_date": "2024-03-01T08:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "e’clat Superior Announces the Launch of Clinically Proven Glutathione Face Cream: The Ultimate Brightening Complex &nbsp;&nbsp; ThePrint",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPNGM1dDRBTWxqWnJPNUpQX29BX0hWWDJKZFlmeF9iQWhmNXp6aXpCbUc1TlhGV1BBazIwazVBRzFSRW5aQ2hXOU9LcnRhTW4wT1IzVWxYYkpld01rNHRWbGZzb011dXR6TWNwM0F0ZDFQbEV3NEtXYTZTZk1zQlNWR0RIeHhIVzBsaVN2bmtJWlVZZDd0T0U2SGpTa2xzczltSW14MWgzdGEwdEVRQTBRUjdycWRHRzg3bEdXWC0xcTV4MUNLMC02dzFCNlBFcGxDOVJxREwtbXlJdG5ERzlSSl9tVWQwNnJlMnBkUnRWMXdZd9IB9wFBVV95cUxPRTVuSWR2UE03a195R05qVFd1T2tVdGl2akJ0eU9vejJpeGFnQml5aEZQWlk1Um1jX2V2dW14V0tkLVAwZDdnbVdhcEJBcm5aUVA2em5SQmZJNzRmXzVWaGFvYUNTTjZUX0RaRFhRbGlGV1EyY0hYc0VEbjFCWTlUZzg1SUtzRVJoNjdUdzd5Uk9fejExbzQ5aEtwam9RdFVVS2Y2aklxVmZMVUFVc0dxMGIyZWdJWDhFVmlXdVpnRU5rdUF2UnZTQWYtS0dwelVBSGZPZTNaQnBxLWt4YUltTnFPczlZWW9kbll1bzBFS1BHQ3k2SExv?oc=5",
-          "published_or_checked_date": "2024-03-01T08:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Best Moisturizers For Men In India (2026): Our Top Picks For Every Skin Type & Budget - Esquire India",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2026-09-29T10:29:05.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Best Moisturizers For Men In India (2026): Our Top Picks For Every Skin Type & Budget &nbsp;&nbsp; Esquire India",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORXZ6c0E1Si1laG43Q3NMa1E2OWhQYUVpUm9Dc2toUUVmVExIZVdCUlQzNWpaOTk2NG50dVVPeTFPNW5OWGFrY0tVVjlrb3Z1NXRSMndCUkk2SzhOM2tHREt4NEdmV1diN1Z6Z1dmQmVYX3V3WC1BYzY1R3czQ0JqeHZ5VEdiLWZQRlhOVC03MUUzLW9OUFp2M1JOc09uNEpjWW1yWDhiSk5rMzJuOWlJSE5qbmNRUGMxU2Rtd3JmU1c0MkVmR3lqM1ZB0gHXAUFVX3lxTE9hc3ZBY2JkRTk3Q3lMaHpUYkNwbUJ3dVdWalh4V2QtZzE4dDFYVlBjSlNPeV9uYXFyMUpaYk9UUEMyZjlUc2tvSXBjVUd4TGFvY0xQTVRoRmtsQWhWaGNyWDZvTmh3QXpWN1NSbUppYTBuYVZOVS1RUVJUVGZwSWpndHd3MHZuaC1kaWduSW1INTU2a2dCSFA0NC1JYWpWcmE1V0JPT0V3TVFxN2JFbmxhYXhuSjdKd3VVQm5kbG1KNkNieVd1SnRwWnRiYkl5NEZULTM1cDM0?oc=5",
-          "published_or_checked_date": "2026-09-29T10:29:05.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "17 best moisturisers for oily skin to survive the monsoon - Vogue India",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [
-        "oily"
-      ],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-06-17T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "17 best moisturisers for oily skin to survive the monsoon &nbsp;&nbsp; Vogue India",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wb3JlSkxxam5yUVc1cEd4OWt1QWJleERyLW5YS0dzT3BrOXVEME9wMzFBaFJQTm1pQVNJaFptaHlJTzJXX1hVeTVQdWt4OHpMNU1EVGZfY2l3MEVhSVlmMlI3bHhuakR2UGRPbQ?oc=5",
-          "published_or_checked_date": "2025-06-17T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "The Best Gel-Based Moisturisers For People With Oily Skin - Esquire India",
-      "brand": "unknown",
-      "product_type": "gel_moisturizer",
-      "skin_type": [
-        "oily"
-      ],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-11-19T08:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "The Best Gel-Based Moisturisers For People With Oily Skin &nbsp;&nbsp; Esquire India",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNblZyMHprUC1NYW5NOEthWnlEX05PaVZNMHZqaHhOVm9jaEx5Z2ljaTc1QWowX2VBd0VHM0xyS1I2a3JtVmVnd2pfQzhtYjB4bjEyN09mUFktNmItWm02OEdfWVVTVGdWTlNTS3FXSWZZZzhMRzM2VndrQXBkTnVCcGsxQVBqU0wxUFHSAZcBQVVfeXFMT0lOTnpSdERPRTJMa0ZUSndTRzVzTFRaMkdIaXB3MGVvX09Xc29CR0RnNFdlT0t4V3RhR2dsZzJ6RllMVEREREZkYXprcDBxSUNuU2pYa3RMYU05MlhFUVRyNEd6Sm1SZUxXUFQ5SzdLMnZoSnE4VGxMVWRGbTFzT01mekZBQndtaEJ3UG00X05yRXU2QnNpWQ?oc=5",
-          "published_or_checked_date": "2025-11-19T08:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Emcutix launches urea-based skin-care moisturizers ‘Ureaderm' - indianpharmapost.com",
+      "product_name": "Emcutix launches urea-based skin-care moisturizers ‘Ureaderm' - Indian Pharma Post",
       "brand": "unknown",
       "product_type": "face_moisturizer",
       "skin_type": [],
@@ -261,9 +398,9 @@
       "india_availability": "unknown",
       "price_inr": null,
       "pack_size": "",
-      "short_description": "Emcutix launches urea-based skin-care moisturizers ‘Ureaderm' &nbsp;&nbsp; indianpharmapost.com",
+      "short_description": "Emcutix launches urea-based skin-care moisturizers ‘Ureaderm' &nbsp;&nbsp; Indian Pharma Post",
       "notable_features": [],
-      "new_or_updated": "new",
+      "new_or_updated": "updated",
       "sources": [
         {
           "name": "Unknown source",
@@ -275,280 +412,23 @@
       "confidence": "low"
     },
     {
-      "product_name": "Alkem launches Olesoft Trucera moisturizing lotion - Business Standard",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-08-19T07:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Alkem launches Olesoft Trucera moisturizing lotion &nbsp;&nbsp; Business Standard",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTkNDM0daQkxBcjBJU2RjejB1eWhUSkRESDlRU2drSTVueVpPVjRrWjhlNWVETjVjTkVIQXkzYjF1UjVPYXB4R2NhSGpGWDRIUHFySjBia0dYVXJmSzdjcGFZUnR3UXUyUFJybmVidl9uQmlqQTh0WW9WLUVUemdZeVYtVVFPQUdhNjVkX2ZDam5heWlRQU1jZ0JxMEwyRlNjeklJMWhOcGFjeVg2aERWNWFEX3pjNEY1bFh1RWxEQTNiNjRDaUNCaldRSVrSAdIBQVVfeXFMTUZmZmNoMFYtOTZIU3dCQnRKQjlTU092Y25HVGlxMnd4VFJtVlUyczdjd2NIUXlGRE1mQUNTS2JuOGJJdWlNMjQ3Q2NEaXYzQVVwNzZtc3ZVS3VSTFNvRlBaY0Z0bUhHUVRHZlk3UWMyNUhYOFNsM3JMdnBrWF8tTjRrTVlRZ0ZpNnBwZlBVQ0xwaGNjOGRzbUlVUUdXVUZTRVhRampNeXg0ZjBXcFljX0N1a3NKaUV2MU9oRkdvc1FwUjhnVnZaU1A1eWZWcUV5d0l3?oc=5",
-          "published_or_checked_date": "2025-08-19T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Minimalist Launches B12 + Repair Complex Moisturizer For Deep Skin Barrier Repair - IFAB MEDIA",
-      "brand": "unknown",
-      "product_type": "barrier_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2025-05-20T07:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Minimalist Launches B12 + Repair Complex Moisturizer For Deep Skin Barrier Repair &nbsp;&nbsp; IFAB MEDIA",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lbW84aUNWWllGWnNGUDlOZjFyN3p2Tl9LeUREa2RncmNSWFE4RjNuOENueVF6cFZrejlxeFRWY2tqcW9XUV8yR3JSWnpKMVN5V05aZFhNanUzZFpEZUVPUHlkR3NGUQ?oc=5",
-          "published_or_checked_date": "2025-05-20T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
       "product_name": "Dot & Key Expands Moisturiser Range With New Dragon Fruit Bounce Jelly Moisturiser - IFAB MEDIA",
       "brand": "unknown",
       "product_type": "face_moisturizer",
       "skin_type": [],
       "key_ingredients": [],
-      "launch_or_update_date": "2026-09-16T20:58:55.000Z",
+      "launch_or_update_date": "2026-09-16T05:48:29.000Z",
       "india_availability": "unknown",
       "price_inr": null,
       "pack_size": "",
       "short_description": "Dot & Key Expands Moisturiser Range With New Dragon Fruit Bounce Jelly Moisturiser &nbsp;&nbsp; IFAB MEDIA",
       "notable_features": [],
-      "new_or_updated": "new",
+      "new_or_updated": "updated",
       "sources": [
         {
           "name": "Unknown source",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1MZEpQZU1sbzMzcFdNeUlqbU1MNzc4eDJiTENnS2VWd1ZfZU5aRFNEaDdkR1Q5UEhQY1p2aDluY2ozWHNDLTM4dWZwVlFrRjl0YUZyTXFVbHRUcjRHVi14cExQUHFhQQ?oc=5",
-          "published_or_checked_date": "2026-09-16T20:58:55.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Dot & Key Expands Its Moisturiser Range With New Dragon Fruit Bounce Jelly Moisturiser - Press Trust of India",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2026-09-15T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Dot & Key Expands Its Moisturiser Range With New Dragon Fruit Bounce Jelly Moisturiser &nbsp;&nbsp; Press Trust of India",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcnNZMzZ3Y2sxQU5zNkswZFp3OFlVWV9XRlZqVThtNHdyQnMzSkZDeE4yVVplNExTS3l6MkpKOUMyWUUtNkJpZTRSWG9na1VmZ19kMHFtZDFlRGN1N3pSU1c4bE1kSTdOS0dweERMVTZfWWdrM2FVbzdRZUR3M1hYVTFEcEtNZWl3Z251bVNGbWlVc2lWQkVXOGJCU29DQkw1cG5QM05CbGNNNXA5bEJMRlQ0N241Z2hBNmg5UEhwcEw4QVlfYUdXQTB3?oc=5",
-          "published_or_checked_date": "2026-09-15T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "8 best dermatologist-recommended moisturisers for combination skin in India (2026) - Healthshots",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [
-        "combination"
-      ],
-      "key_ingredients": [],
-      "launch_or_update_date": "2026-05-08T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "8 best dermatologist-recommended moisturisers for combination skin in India (2026) &nbsp;&nbsp; Healthshots",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeEVVcWt4clY3a1MxWUNpRWxaMVg5cWxHekNyaTMxNDlkbVUzc0dVbDZDRF9xNDlsUWhOWF9DTllaekZXUGNLaWlocmNrT2xLcWdlazFyZjJ2QWc2QkNLRnVjMlNYejRBTHJlOF8wSFh3NF8wemhxM2RCTE55LXVmVmRkUUJOcXJnRUptNmlvejdLamsxWVHSAZoBQVVfeXFMTm9rVWtLLUNFOUlqY2YtV3JQQ1p5My11dnF2VE90THJrYmd1ZTV3dXE1NjBhUHFFenBfRHc4RlpLWU1kdmNKWk5VQ2FoVmhzWnNkQk5PandYZnhZRllSc1pkMmZvSUVOZnNhM29KMXJrSldEdFBSQWZrb2ZqX3NlT2ZYNm1Bek5ZcktrTmhCLXBzSUtfVXVkaXdWQQ?oc=5",
-          "published_or_checked_date": "2026-05-08T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Luxury Skincare Brand Clé De Peau Beauté Just Launched Its Latest Reformulation Of Their Cult Classic Moisturizer La Crème - Forbes",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2020-01-30T08:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Luxury Skincare Brand Clé De Peau Beauté Just Launched Its Latest Reformulation Of Their Cult Classic Moisturizer La Crème &nbsp;&nbsp; Forbes",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOZDVkTms5VHJEWklqdTdHZXhpSjc3YWc4MTJtOWVyOXh4RHJkbUxvMXJaWFVJaGRqS2F4UkkzSUxuclZTN3lJTEhrcTBsOWthVjZiUWJ0SDdyUVdWejFYc01IUnRjZm55djUta18zRjU4Qld2STk0LWViRVpWcS12Ym1NYVloWlRGVWJBUmtGZzdHbVoxUzY0Q3ktVXlJMjNRbEFDYklENy1iU0VRYmJyYVhuZ2FuX01aVENwaHBxd044a2pGZ0xLZjNtMDFoSnR4Nm9VU01NVTIzQlVTM1BjeHVIanZtTjloV21JREJHQTRGR21CSjVOS1JTN3VoVnVpTkU4?oc=5",
-          "published_or_checked_date": "2020-01-30T08:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Tackle eczema-prone skin with Cetaphil’s new Repair Cream and reformulated Skin Restoring Moisturizer - SG Magazine",
-      "brand": "unknown",
-      "product_type": "cream_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2024-03-25T07:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Tackle eczema-prone skin with Cetaphil’s new Repair Cream and reformulated Skin Restoring Moisturizer &nbsp;&nbsp; SG Magazine",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOU0Q5NEdXRzhtcU1Ka2draGxjR2pLTUQ2MWZCVHNROW0xNHZWWG5mOThjeUZlOTJlWGlRYnowOXhxcExGUXh3X1Y2VHhwRlBOaHdNVHg3dEZJU1RWbGFraWk3YzlqYmFkSTAzNDNRb3dmMy1leXMtOUZJdDNCRk43aEZQNExrLUJreFY5R3FnOEZ2VGlaczRVaWowRTk1aURiRkkxN002MFhQdkpOWktuOWhtZnRuNFdzY0VrbTRNNVZabVVsSDNNOFVvM0YzZw?oc=5",
-          "published_or_checked_date": "2024-03-25T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Why you need to moisturise during winters - The Times of India",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2023-11-02T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Why you need to moisturise during winters &nbsp;&nbsp; The Times of India",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN2xUUXNpWGlFLVZIMG9uNHRjZ3ZJZGhoLWt3cHVpRlV1T1g0ZmNaYXphaVZPVnJsWGhrWWN1QjAtQ1JPZ0JFcXdSbllRMlBIb0ZuTEkweHlGR2dvYnVhQmFfNmxnNVlncDZNLVIzeTVoNll6Um1ZdWVrdnhqU3A5dXNINGZQcGVtRC1XbWRzaU05QlZKRjZmcnBXMWdhcFNEZUU4LW1mY2dhdFNKMTRiSllXU0NiYnIwOHgwWmhjZ2pDZ9IBxwFBVV95cUxPenlHdjdrT0h4bjN2UWVyOHgwYnhUdnczQk04WWdMX0d3cV80a1d4bVlQNWd5T0d5SVhsdkZFMHRWa3RIRTgwS1NBclN2dzFPSWtEMlRfYVc0TXRFSFVFQmJva0RhT1lDZHpUMlowWEtWcGRNb01hVk5vbG1KYUNNWHVGWk1sR1VDd1dGR09pQkVBaVk5bmRjVmZqUndNeEdKX0VyVHZFbnR6cFoyTjR1LXJzMllVYjJzbTBMTW9LdUpSdXpkU0lB?oc=5",
-          "published_or_checked_date": "2023-11-02T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Retail India News: Mamaearth Launches Light Moisturizing Creams for Winter Skin Care - Indian Retailer",
-      "brand": "unknown",
-      "product_type": "cream_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2024-10-25T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Retail India News: Mamaearth Launches Light Moisturizing Creams for Winter Skin Care &nbsp;&nbsp; Indian Retailer",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRDJDbzMydlNOOGJEc1BXUFhrd3dUU2lHMXNWX1Q1YnhYeHgyNVE2OUltMDFfcHp3eG8yN2dJemtHR0FWa040dlBXWFgybWl0RU9FTjBYTHNLSlVYR3pXYjAyeWJPWWdGUGhBNkRtX09mY09SbnVzWlFhOGJkOWhCU0J0d2hRVXRFX2FHYlY3bnZvWXR0cFhpUzFWZnRCVWxjNXlTSGtTYUEwNENKRUFTcEh3QnV5QQ?oc=5",
-          "published_or_checked_date": "2024-10-25T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "Emami Introduces 'Boroplus Cocoa Soft Moisturising Lotion' This Winter With Bollywood Actor Parineeti Chopra - adgully.com",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2015-11-24T08:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "Emami Introduces 'Boroplus Cocoa Soft Moisturising Lotion' This Winter With Bollywood Actor Parineeti Chopra &nbsp;&nbsp; adgully.com",
-      "notable_features": [],
-      "new_or_updated": "new",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMUxsSG1zci1oNFhqMjFMaHRfdm9lVjEwZXQwR0RveThJWnA5WmJMdDNGYjRHZ0ZaSFZiZ05DbG1jcjBKdlFERW9vX1JnSkJ0dmx3WVY4NndlVU5aSTVrZlFZNW9WU044WllXb1E3ZjdYQmotZWkySlR6SXJFRU5pMVdrWUpCdXhwMXZpQ0xBZUViOGtrZkRpbFhEVjdsZGUyTlNqWkJrVmlteUpQMWtaOVVqUGhQc2w2YkVBV0F5My1EY2hIekQ4RlI2UHBmeXp1N3RGWEJjYjY?oc=5",
-          "published_or_checked_date": "2015-11-24T08:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "100% Natural & Vegan brand mCaffeine launches caffeine based face moisturizers - Bold Outline",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [],
-      "key_ingredients": [],
-      "launch_or_update_date": "2021-05-17T07:00:00.000Z",
-      "india_availability": "unknown",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "100% Natural & Vegan brand mCaffeine launches caffeine based face moisturizers &nbsp;&nbsp; Bold Outline",
-      "notable_features": [],
-      "new_or_updated": "updated",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaE5RalVjUF8ySGRBS2xIZjFfcllSeWFPRFdpQmt0YWp5VUlEOEk1UjdYRjl4RmV5cllFT0JwNm01eGlOeE5WU043UkV6akJlU0ZGUTNWUXR6X2UwOTBkdUItcEFRMU1NR1hzTjR6eTNKSVh6ZFdTcG5hVERfUUNTZVZUMFRHRW1EWnpJV09hVy1ySU5HaGUwaERsVk8xdDl5?oc=5",
-          "published_or_checked_date": "2021-05-17T07:00:00.000Z",
-          "source_type": "news_rss"
-        }
-      ],
-      "confidence": "low"
-    },
-    {
-      "product_name": "15 Best Moisturizer for oily skin in India: recommend by dermatologist - SugerMint",
-      "brand": "unknown",
-      "product_type": "face_moisturizer",
-      "skin_type": [
-        "oily"
-      ],
-      "key_ingredients": [],
-      "launch_or_update_date": "2022-04-04T07:00:00.000Z",
-      "india_availability": "reported",
-      "price_inr": null,
-      "pack_size": "",
-      "short_description": "15 Best Moisturizer for oily skin in India: recommend by dermatologist &nbsp;&nbsp; SugerMint",
-      "notable_features": [],
-      "new_or_updated": "updated",
-      "sources": [
-        {
-          "name": "Unknown source",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41Q2lGWUc4S0FGZnlXWVQzdVdyX2VDRmMyNjJmX2NYcGtRRHVEZ25maGtwYi1PUEhhdHhmVUhVbGtDWWZYVG4wNF9Pekw1NjlZMlZxUkpNbTZGSXlGOVRrQk5TZC0zLUVNeHhnZExGWQ?oc=5",
-          "published_or_checked_date": "2022-04-04T07:00:00.000Z",
+          "published_or_checked_date": "2026-09-16T05:48:29.000Z",
           "source_type": "news_rss"
         }
       ],
