@@ -1,6 +1,18 @@
 {
-  "generated_at": "2026-11-08T06:45:48.467Z",
+  "generated_at": "2026-11-15T07:17:35.637Z",
   "history": [
+    {
+      "date": "2026-11-15",
+      "file": "history/2026-11-15",
+      "summary": {
+        "products_reviewed": 27,
+        "new_products": 19,
+        "updated_products": 0,
+        "duplicates_skipped": 8,
+        "verified_sources": 19
+      },
+      "is_demo": false
+    },
     {
       "date": "2026-11-08",
       "file": "history/2026-11-08",
